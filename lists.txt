@@ -1,0 +1,1 @@
+https://codeberg.org/rossabaker/github-copilot-filters/raw/branch/main/filters.txt # CC0-1.0

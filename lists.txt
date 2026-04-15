@@ -1,2 +1,4 @@
 https://codeberg.org/rossabaker/github-copilot-filters/raw/branch/main/filters.txt # CC0-1.0
 https://raw.githubusercontent.com/laylavish/uBlockOrigin-HUGE-AI-Blocklist/main/list.txt # CC0-1.0
+https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters/blob/raw?file=bpc-paywall-filter.txt # MIT
+https://raw.githubusercontent.com/liamengland1/miscfilters/refs/heads/master/antipaywall.txt # GPL-3.0

@@ -8,7 +8,7 @@ third-party sources.
 ## Subscribe
 
 ```text
-https://raw.githubusercontent.com/callumio/sieve/main/dist/filter.txt
+https://raw.githubusercontent.com/callumio/sieve/refs/heads/main/dist/filter.txt
 ```
 
 Paste into uBlock Origin -> Dashboard -> Filter lists -> Import.

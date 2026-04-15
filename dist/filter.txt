@@ -1,7 +1,9 @@
 ! Title: Sieve
 ! Expires: 1 days
-! Updated: Wed Apr 15 14:53:45 UTC 2026
+! Updated: Wed Apr 15 15:23:19 UTC 2026
 !
+! --- src/github.txt ---
+github.com##button:has(svg[class*="octicon-agent"])
 ! --- https://codeberg.org/rossabaker/github-copilot-filters/raw/branch/main/filters.txt (license: CC0-1.0) ---
 # SPDX-FileCopyrightText: 2025 Ross A. Baker <ross@rossabaker.com>
 #

@@ -1,0 +1,22 @@
+name: Build filters
+on:
+  schedule:
+    - cron: '0 4 * * *' # daily at 4am
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Build filter list
+        run: ./build.sh
+
+      - uses: stefanzweifel/git-auto-commit-action@v7
+        with:
+          commit_message: "chore: build filters"
+          file_pattern: dist/filter.txt

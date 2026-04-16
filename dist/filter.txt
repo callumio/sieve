@@ -1,6 +1,6 @@
 ! Title: Sieve
 ! Expires: 1 days
-! Updated: Wed Apr 15 15:23:19 UTC 2026
+! Updated: Thu Apr 16 05:54:03 UTC 2026
 !
 ! --- src/github.txt ---
 github.com##button:has(svg[class*="octicon-agent"])
@@ -4851,3 +4851,6 @@ musicbusinessworldwide.com##.mb-article__body:style(display:inherit!important)
 
 hawaiitribune-herald.com##.single-login-box, #single-excerpt
 hawaiitribune-herald.com##.paywall:style(display:inherit!important)
+
+@@||piano.io/api/tinypass.min.js$script,domain=thepress.co.nz|thepost.co.nz|waikatotimes.co.nz
+thepress.co.nz,thepost.co.nz,waikatotimes.co.nz##[data-testid="ad-slot"]

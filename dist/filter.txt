@@ -1,6 +1,6 @@
 ! Title: Sieve
 ! Expires: 1 days
-! Updated: Thu Apr 16 05:54:03 UTC 2026
+! Updated: Fri Apr 17 05:56:29 UTC 2026
 !
 ! --- src/github.txt ---
 github.com##button:has(svg[class*="octicon-agent"])
@@ -3613,8 +3613,7 @@ mail.google.com,drive.google.com,docs.google.com##div[role="tooltip"]:has-text(T
 ||olytics.omeda.com^$third-party
 ||onecount.net^$third-party
 ||js.pelcro.com^$script,third-party
-/xbuilder/experience/execute$xmlhttprequest,~third-party
-||piano.io/xbuilder/experience/execute$xmlhttprequest,third-party,domain=~automobilwoche.de
+/xbuilder/experience/execute$xmlhttprequest,domain=~automobilwoche.de
 @@||piano.io^$domain=hbr.org|japantimes.co.jp
 @@||tinypass.com$script,domain=ajc.com|thelogic.co
 ||api.pico.tools/client/query/*$xmlhttprequest,~third-party
@@ -3668,11 +3667,7 @@ bhaskar.com##div.paywallBlockedContent~div:remove()
 bhaskar.com##article div:empty
 bhaskar.com##+js(ra, class, div.paywallBlockedContent, stay)
 /\.bizjournals\.com\/.+\/(news|stories)\/.+\.html/$inline-script,~third-party
-||cm.bloomberg.com^$xmlhttprequest,~third-party
-||assets.bwbx.io/s3/javelin/public/javelin/js/foundation/transporter/foundation_transporter-*.js$script,domain=bloomberg.com
-bloomberg.com##+js(ra, data-paywall-overlay-status, body[data-paywall-overlay-status], stay)
-bloomberg.com##div[id^="fortress-"]
-bloomberg.com##+js(set-local-storage-item, history, $remove$)
+||bwbx.io/s3/fence/$script,third-party,domain=bloomberg.com
 ||bloombergadria.com/*/news$inline-script
 bloombergadria.com##+js(ra, style, article.single-news[style], stay)
 ||meter.bostonglobe.com/js/meter.js$script,~third-party

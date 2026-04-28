@@ -1,6 +1,6 @@
 ! Title: Sieve
 ! Expires: 1 days
-! Updated: Mon Apr 27 06:19:54 UTC 2026
+! Updated: Tue Apr 28 06:22:54 UTC 2026
 !
 ! --- src/github.txt ---
 github.com##button:has(svg[class*="octicon-agent"])
@@ -3828,6 +3828,7 @@ legrandcontinent.eu##+js(rc, paywall|pw|softwall, body)
 lejdd.fr,parismatch.com,public.fr###poool-container,#poool-widget-content,#poool-widget,.forbidden
 lejdd.fr,parismatch.com,public.fr##+js(ra, data-poool-mode, .cnt[data-poool-mode="hide"])
 lepoint.fr,lexpress.fr##+js(set, window.Fusion.globalContent.content_restrictions, {})
+/\.lequipe\.fr\/assets\/js\/.*[wW]all.+\.js/$script,~third-party
 ||livemint.com/lm-img/subscription/$script,~third-party
 livemint.com##+js(rc, paywall, div.paywall)
 livemint.com##div[class^="storyPaywall_paywallStory_"]:remove()

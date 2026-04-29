@@ -1,6 +1,6 @@
 ! Title: Sieve
 ! Expires: 1 days
-! Updated: Tue Apr 28 06:22:54 UTC 2026
+! Updated: Wed Apr 29 06:14:50 UTC 2026
 !
 ! --- src/github.txt ---
 github.com##button:has(svg[class*="octicon-agent"])
@@ -4785,11 +4785,11 @@ foxnews.com##.show-gate.gated-overlay.article-gating
 ||businessinsider.com/chunks/scripts/components~paywall-
 ||businessinsider.com/ajax/render-component?path=paywall
 
-/zephr/*$1p,domain=nrc.nl|dailymail.co.uk|forbes.com|irishtimes.com|nysun.com|nzherald.co.nz|theglobeandmail.com|theatlantic.com
+/zephr/*$1p,domain=nrc.nl|dailymail.com|forbes.com|irishtimes.com|nysun.com|nzherald.co.nz|theglobeandmail.com|theatlantic.com
 ||newzware.com/zephr/
-dailymail.co.uk##body.is-paywalled-article.mol-desktop div[itemprop=articleBody] *:nth-child(n+3),body.is-paywalled-article.mol-mobile .scrollable-content>article,body.is-paywalled-article.mol-mobile .scrollable-content>article *:nth-child(n+28):style(display:inherit!important)
-dailymail.co.uk##body.is-paywalled-article.mol-desktop div[itemprop=articleBody]::after:style(content:none!important)
-dailymail.co.uk##body.is-paywalled-article.mol-mobile .scrollable-content>article:style(padding-bottom:0!important)
+dailymail.com##body.is-paywalled-article.mol-desktop div[itemprop=articleBody] *:nth-child(n+3),body.is-paywalled-article.mol-mobile .scrollable-content>article,body.is-paywalled-article.mol-mobile .scrollable-content>article *:nth-child(n+28):style(display:inherit!important)
+dailymail.com##body.is-paywalled-article.mol-desktop div[itemprop=articleBody]::after:style(content:none!important)
+dailymail.com##body.is-paywalled-article.mol-mobile .scrollable-content>article:style(padding-bottom:0!important)
 
 cnn.com##body>[class*="reg-wall"]
 cnn.com##html,body:style(overflow:auto!important;position:initial!important)

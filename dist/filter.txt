@@ -1,6 +1,6 @@
 ! Title: Sieve
 ! Expires: 1 days
-! Updated: Sat May  2 05:59:02 UTC 2026
+! Updated: Sun May  3 06:19:35 UTC 2026
 !
 ! --- src/github.txt ---
 github.com##button:has(svg[class*="octicon-agent"])
@@ -3819,6 +3819,7 @@ kurier.at##div#cfs-paywall-container
 ||glanacion.com/*/metering/*.js$script,domain=lanacion.com.ar
 lanacion.com.ar##+js(cookie-remover, /^metering_arc/)
 lanacion.com.ar##+js(set-local-storage-item, /^/, $remove$)
+lance.com.br##+js(rc, h-[550px], div.paywall-content[class*="h-\["], stay)
 ||latimes.com/meteringjs/$script,~third-party
 ||californiatimes.com/caltimes/latimes/Bootstrap.js$script,third-party,domain=latimes.com
 ||ev.lavanguardia.com$xmlhttprequest,~third-party
@@ -4138,6 +4139,8 @@ policorner.ca##div.free-text,div.subscribe-box
 ||jeuneafrique.com/cdn-cgi/trace$xmlhttprequest,~third-party
 ||assets.guim.co.uk/assets/SignInGate*.js$script,domain=theguardian.com
 theguardian.com##[name="SlotBodyEnd"],div[data-cy="contributions-liveblog-epic"]
+timesofindia.indiatimes.com##+js(ra, style, body[style], stay)
+timesofindia.indiatimes.com##div[class]:has(>div.loginWallPopUP)
 
 @@||consentmanager.net$script,third-party
 #@#.cmpwrapper

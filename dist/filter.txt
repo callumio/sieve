@@ -1,6 +1,6 @@
 ! Title: Sieve
 ! Expires: 1 days
-! Updated: Tue May  5 06:07:53 UTC 2026
+! Updated: Wed May  6 06:22:55 UTC 2026
 !
 ! --- src/github.txt ---
 github.com##button:has(svg[class*="octicon-agent"])
@@ -3667,7 +3667,7 @@ bhaskar.com##div.paywallBlockedContent~div:remove()
 bhaskar.com##article div:empty
 bhaskar.com##+js(ra, class, div.paywallBlockedContent, stay)
 /\.bizjournals\.com\/.+\/(news|stories)\/.+\.html/$inline-script,~third-party
-||bwbx.io/s3/fence/$script,third-party,domain=bloomberg.com
+||bwbx.io/s3/fence/fortress-client/$script,third-party,domain=bloomberg.com
 ||bloombergadria.com/*/news$inline-script
 bloombergadria.com##+js(ra, style, article.single-news[style], stay)
 ||meter.bostonglobe.com/js/meter.js$script,~third-party
@@ -3852,6 +3852,8 @@ mexiconewsdaily.com##+js(rc, tdb-block-inner, body.single div.td-post-content > 
 ||musicomh.com/wp-content/*/bundle.js$script,~third-party
 mv-voice.com##+js(cookie-remover, /^/)
 ||cdn.registerdisney.go.com$script,domain=nationalgeographic.com
+nationalgeographic.it##+js(ra, style, section[style], stay)
+nationalgeographic.it##section.paywall-container
 ||nautil.us/_next/static/chunks/pages/_sites/%5BsiteSlug%5D/%5B...slug*.js$script,~third-party
 newsday.com##+js(ra, class, html[class])
 newrepublic.com##div.article-scheduled-modal
@@ -3929,6 +3931,8 @@ spglobal.com##+js(cookie-remover, count)
 startribune.com##div.modal-backdrop
 startribune.com##body[class]:style(overflow: auto !important; position: static !important;)
 ||stereogum.com/_next/static/chunks/pages/_sites/%5BsiteSlug%5D/%5B...slug*.js$script,~third-party
+||straitstimes.com/opinion/$inline-script
+/\.straitstimes\.com\/.+(\w+-){3,}.+\?rel=plus/$inline-script
 study.com##+js(ra, class, div.faded-content)
 study.com##+js(ra, class, div.hidden[ng-non-bindable])
 study.com##div.article-cutoff-div
@@ -4861,4 +4865,7 @@ thepress.co.nz,thepost.co.nz,waikatotimes.co.nz##[data-testid="ad-slot"]
 
 ||adweek.com/wp-content/plugins/adw-zephr/
 adweek.com##+js(rpnt, script, /if \(!window.Zephr\)/, document.querySelector('.non-paywall').innerHTML = "<p>" + JSON.parse(document.querySelector('script[type="application/ld+json"]').innerText).sharedContent.articleBody.replaceAll("\n"\, "<p>");if (!window.Zephr), sedCount, 10)
-adweek.com##.paywall, .zephr-form-container, .aw-article-content+div[style*="gradient"]
+adweek.com##.paywall, .zephr-form-container, .aw-article-content+div[style*="gradient"], .promo-insert
+
+afr.com##+js(rpnt, script, /tp = window.tp/, 'setTimeout(function(){eval=window.eval,eval(atob("YT1bLi4uZG9jdW1lbnQuZ2V0RWxlbWVudHNCeVRhZ05hbWUoInNjcmlwdCIpXS5maWx0ZXIoZT0+ZS5pbm5lckhUTUwmJmUuaW5uZXJIVE1MLmluY2x1ZGVzKCJfX3N0YXRpY1JvdXRlckh5ZHJhdGlvbkRhdGEgPSBKU09OLnBhcnNlIikpWzBdLmlubmVySFRNTCxiPWEuc3Vic3RyaW5nKGEuaW5kZXhPZignSlNPTi5wYXJzZSgiJykpLHQ9ZXZhbChiKS5sb2FkZXJEYXRhLGZvdW5kPU9iamVjdC52YWx1ZXModCkuZmlsdGVyKGU9PmUpWzBdLGJvZHk9RG9jdW1lbnQucGFyc2VIVE1MVW5zYWZlKGZvdW5kLmNvbnRlbnQuYXNzZXQuYm9keSkscGxhY2Vob2xkZXJWYWx1ZXM9Zm91bmQuY29udGVudC5hc3NldC5ib2R5UGxhY2Vob2xkZXJzLHBsYWNlaG9sZGVyRWxlbWVudHM9Ym9keS5xdWVyeVNlbGVjdG9yQWxsKCJ4LXBsYWNlaG9sZGVyIikuZm9yRWFjaChlPT57c3dpdGNoKHg9cGxhY2Vob2xkZXJWYWx1ZXNbZS5pZF0sdHlwZT14LnR5cGUsZGF0YT14LmRhdGEsdHlwZSl7Y2FzZSJsaW5rRXh0ZXJuYWwiOmUuaW5uZXJIVE1MPWA8YSBocmVmPSIke2RhdGEudXJsfSIke2RhdGEubmV3VGFiPycgdGFyZ2V0PSJfYmxhbmsiJzoiIn0ke2RhdGEubm9Gb2xsb3c/JyByZWw9Im5vZm9sbG93Iic6IiJ9PiR7ZGF0YS50ZXh0fTwvYT5gO2JyZWFrO2Nhc2UiaW1hZ2UiOmUuaW5uZXJIVE1MPWA8YnI+PGJyPjxpbWcgc3JjPSJodHRwczovL3N0YXRpYy5mZnguaW8vaW1hZ2VzLyR7ZGF0YS5maWxlTmFtZX0iIGFsdD0iJHtkYXRhLmFsdFRleHR9IiBzdHlsZT0iZGlzYWJsZWQtYXNwZWN0LXJhdGlvOiAke2RhdGEuYXNwZWN0fTsgd2lkdGg6IDUwdnciIC8+PGZpZ2NhcHRpb24gc3R5bGU9ImNvbG9yOiAjNTU1O2ZvbnQtZmFtaWx5OiBzdWVjYW5hbm9fcmVndWxhcixhcmlhbCxsdWNpZGEgZ3JhbmRlLHNhbnMtc2VyaWY7Zm9udC1zaXplOiAuNzVyZW07bGluZS1oZWlnaHQ6IDEuMzsiPiR7ZGF0YS5jYXB0aW9ufTwvZmlnY2FwdGlvbj5gO2JyZWFrO2RlZmF1bHQ6ZS5pbm5lckhUTUw9IiJ9fSk7CmRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoJ1tjbGFzcyQ9ImFydGljbGVCb2R5Il0nKS5pbm5lckhUTUw9Ym9keS5nZXRFbGVtZW50c0J5VGFnTmFtZSgiYm9keSIpWzBdLmlubmVySFRNTDs="))}, 2500); tp = window.tp', sedCount, 1)
+

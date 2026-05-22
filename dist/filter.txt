@@ -1,6 +1,6 @@
 ! Title: Sieve
 ! Expires: 1 days
-! Updated: Thu May 21 07:38:28 UTC 2026
+! Updated: Fri May 22 07:33:09 UTC 2026
 !
 ! --- src/github.txt ---
 github.com##button:has(svg[class*="octicon-agent"])

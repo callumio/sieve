@@ -1,6 +1,6 @@
 ! Title: Sieve
 ! Expires: 1 days
-! Updated: Mon Jul  6 08:06:46 UTC 2026
+! Updated: Tue Jul  7 07:24:52 UTC 2026
 !
 ! --- src/github.txt ---
 github.com##button:has(svg[class*="octicon-agent"])
@@ -8,6 +8,12 @@ github.com##button:has(svg[class*="octicon-agent"])
 # SPDX-FileCopyrightText: 2025 Ross A. Baker <ross@rossabaker.com>
 #
 # SPDX-License-Identifier: CC0-1.0
+
+
+# Exempt Copilot settings.  This is a conscious choice, and we
+# should let users opt out.
+@@||github.com/settings/copilot^$document,generichide,specifichide,elemhide
+@@||github.com/settings/copilot/*$document,generichide,specifichide,elemhide
 
 # General blunt force rules.  Use :not when the generic rules are
 # wrapping content that we do need to see.
@@ -21,6 +27,9 @@ github.com##[data-hovercard-type="copilot"]
 
 # Hides the "Agents" button in the repo navigation panel
 github.com##nav[aria-label="Repository"] span[data-content="Agents"]:upward(2)
+
+# Hides the "Models" button in the repo navigation panel
+github.com##nav[aria-label="Repository"] span[data-content="Models"]:upward(2)
 
 # Hides Copilot as a suggested reviewer on PRs and issues.  The typo
 # in the id is intentional, and the ID is a magic number.
@@ -4202,6 +4211,8 @@ cmcmarkets.com##+js(rc, activePaywall, .activePaywall)
 connexionfrance.com##+js(cookie-remover, /^/)
 connexionfrance.com##div#subscribe-banner
 ||darwin.cx/dcxpw-init.js$script,domain=cspdailynews.com|restaurantbusinessonline.com
+dasinvestment.com##+js(rc, paywall-blurred, div.paywall-blurred, stay)
+dasinvestment.com##div#paywall
 ||diariodonordeste.verdesmares.com.br/js/com.atex.gong.paywall.membership.js$script,~third-party
 divisare.com##div.blocker
 divisare.com##+js(ra, style, body[style], stay)

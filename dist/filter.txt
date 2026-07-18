@@ -1,6 +1,6 @@
 ! Title: Sieve
 ! Expires: 1 days
-! Updated: Fri Jul 17 06:06:38 UTC 2026
+! Updated: Sat Jul 18 05:54:18 UTC 2026
 !
 ! --- src/github.txt ---
 github.com##button:has(svg[class*="octicon-agent"])
@@ -75,6 +75,9 @@ github.com##a:has-text("Copilot Autofix for CodeQL"):upward(3)
 # Blocks requests made on loading the new homepage
 # https://codeberg.org/rossabaker/github-copilot-filters/pulls/17
 ||github.com/github-copilot/chat^
+
+# The "Fix with Copilot" button on broken Actions logs
+github.com##div[data-test-id="copilot-actions-fix-button"]
 ! --- https://raw.githubusercontent.com/laylavish/uBlockOrigin-HUGE-AI-Blocklist/main/list.txt (license: CC0-1.0) ---
 
 

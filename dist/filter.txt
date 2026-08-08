@@ -1,6 +1,6 @@
 ! Title: Sieve
 ! Expires: 1 days
-! Updated: Fri Aug  7 05:25:23 UTC 2026
+! Updated: Sat Aug  8 04:43:23 UTC 2026
 !
 ! --- src/github.txt ---
 github.com##button:has(svg[class*="octicon-agent"])
@@ -34,6 +34,9 @@ github.com##nav[aria-label="Repository"] span[data-content="Models"]:upward(2)
 # Hides Copilot as a suggested reviewer on PRs and issues.  The typo
 # in the id is intentional, and the ID is a magic number.
 github.com##[id="suggested-reviewier-175728472"]
+
+# Remove Copilot from Suggestions in reviewer dropdown
+github.com##label:has(input[value="175728472"])
 
 # Hide the "explain error" on the Actions details mennu
 github.com##li[aria-keyshortcuts="e"]:has(svg[class*="copilot"])
@@ -78,6 +81,9 @@ github.com##a:has-text("Copilot Autofix for CodeQL"):upward(3)
 
 # The "Fix with Copilot" button on broken Actions logs
 github.com##div[data-test-id="copilot-actions-fix-button"]
+
+# Remove the "Request Copilot review" button
+github.com##:has(> #suggested-reviewer-175728472)
 ! --- https://raw.githubusercontent.com/laylavish/uBlockOrigin-HUGE-AI-Blocklist/main/list.txt (license: CC0-1.0) ---
 
 

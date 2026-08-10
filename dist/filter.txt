@@ -1,6 +1,6 @@
 ! Title: Sieve
 ! Expires: 1 days
-! Updated: Sun Aug  9 04:52:08 UTC 2026
+! Updated: Mon Aug 10 05:12:31 UTC 2026
 !
 ! --- src/github.txt ---
 github.com##button:has(svg[class*="octicon-agent"])
@@ -3943,7 +3943,6 @@ sofrep.com##div.non-paywall,div#paywall_wrap
 spektrum.de##+js(rc, pw-premium, article.pw-premium, stay)
 spektrum.de##+js(ra, style, body[style], stay)
 spglobal.com##+js(cookie-remover, count)
-||spiegel.de/public/shared/generated/js/commons.*.js$script,~third-party
 startribune.com##div.modal-backdrop
 startribune.com##body[class]:style(overflow: auto !important; position: static !important;)
 ||stereogum.com/_next/static/chunks/pages/_sites/%5BsiteSlug%5D/%5B...slug*.js$script,~third-party
@@ -3954,6 +3953,7 @@ study.com##+js(ra, class, div.hidden[ng-non-bindable], stay)
 study.com##div.article-cutoff-div
 ||suomensotilas.fi/wp-content/plugins/epflpw/js/pw.js$script,~third-party
 suomensotilas.fi##+js(rc, epfl-pw-obscured, div.epfl-pw-obscured, stay)
+/\.telegram\.hr\/.+\/(\w+-){3,}/$inline-script
 ||telegraph.co.uk/martech/js/$script,~third-party
 tes.com##+js(cookie-remover, /tg_paywall/)
 tes.com##+js(ra, class, div.tg-paywall-body-overlay, stay)

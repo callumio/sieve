@@ -1,6 +1,6 @@
 ! Title: Sieve
 ! Expires: 1 days
-! Updated: Fri Aug 14 05:21:03 UTC 2026
+! Updated: Sat Aug 15 04:16:20 UTC 2026
 !
 ! --- src/github.txt ---
 github.com##button:has(svg[class*="octicon-agent"])
@@ -3625,6 +3625,7 @@ mail.google.com,drive.google.com,docs.google.com##div[role="tooltip"]:has-text(T
 ||evolok.net^$third-party
 ||fewcents.co/*/paywall*.js$script,third-party
 ||hadrianpaywall.com^$third-party
+.com/pugpig-websmartbanner.js$script,~third-party
 .de/sub/js/pc-offer-west.js$script,~third-party
 ||js.matheranalytics.com^$script,third-party
 ||newsmemory.com?meter$third-party

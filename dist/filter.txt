@@ -1,6 +1,6 @@
 ! Title: Sieve
 ! Expires: 1 days
-! Updated: Sat Aug 22 04:18:29 UTC 2026
+! Updated: Sun Aug 23 04:24:04 UTC 2026
 !
 ! --- src/github.txt ---
 github.com##button:has(svg[class*="octicon-agent"])
@@ -3998,6 +3998,7 @@ theweek.com##div.kiosq-main-layer
 thewrap.com##+js(cookie-remover, blaize_session)
 timeshighereducation.com##+js(rc, paywall-fade, div.paywall-fade, stay)
 timeshighereducation.com##div.paywall-active
+||timesofindia.indiatimes.com/*.cms?rel=plus$inline-script
 tomshardware.com##+js(rc, paywall-locker, div.paywall-locker, stay)
 tomshardware.com##div#kiosq-app-paywall-js
 unherd.com##+js(ra, id, div#premiumcontent, stay)

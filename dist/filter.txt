@@ -1,6 +1,6 @@
 ! Title: Sieve
 ! Expires: 1 days
-! Updated: Sun Aug 30 09:29:57 UTC 2026
+! Updated: Mon Aug 31 10:08:13 UTC 2026
 !
 ! --- src/github.txt ---
 github.com##button:has(svg[class*="octicon-agent"])
@@ -3889,6 +3889,8 @@ nybooks.com##div.toast-cta
 ||mwcm.nyt.com/$script,domain=nytimes.com
 nytimes.com##div#dock-container
 ||cooking.nytimes.com/api/*/access$xmlhttprequest,~third-party
+nzgeo.com##+js(cookie-remover, visits)
+nzgeo.com##div#paywall-bottom
 ||nzherald.co.nz/zephr/$xmlhttprequest,~third-party
 nzherald.co.nz##+js(set, window.Fusion.globalContent.isPremium, false)
 nzz.ch,themarket.ch##+js(rc, nzzinteraction, .nzzinteraction, stay)
@@ -4234,6 +4236,7 @@ dominionpost.com##+js(rc, entry-content, article > div.entry-content, stay)
 ||gstatic.com/firebasejs/*/firebase-auth-compat.js$script,domain=eleconomista.com.ar
 elfinancierocr.com##+js(ra, style, div.article-body-wrapper__styled[style], stay)
 elfinancierocr.com##div.post
+emma.de##div.grid-box-body:style(height: 100% !important;)
 epaper.indiatimes.com##div.epaperBlockerWrap
 /\/every\.to\/[-\w]+\//$inline-script,domain=every.to
 every.to##+js(ra, style, div#post-body-full, stay)

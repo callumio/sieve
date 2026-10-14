@@ -1,6 +1,6 @@
 ! Title: Sieve
 ! Expires: 1 days
-! Updated: Tue Oct 13 11:12:45 UTC 2026
+! Updated: Wed Oct 14 09:03:42 UTC 2026
 !
 ! --- src/github.txt ---
 github.com##button:has(svg[class*="octicon-agent"])
@@ -84,6 +84,12 @@ github.com##div[data-test-id="copilot-actions-fix-button"]
 
 # Remove the "Request Copilot review" button
 github.com##:has(> #suggested-reviewer-175728472)
+
+# Hide "Copilot started reviewing" timeline events
+github.com##.TimelineItem:has(a[aria-label^="View session"])
+
+# Remove the Agents tab in the repo navigation
+github.com##a[id="rgh-extensible-nav-agents"]:upward(li)
 ! --- https://raw.githubusercontent.com/laylavish/uBlockOrigin-HUGE-AI-Blocklist/main/list.txt (license: CC0-1.0) ---
 
 
@@ -4470,6 +4476,7 @@ abc.es##+js(ra, id, body#top, stay)
 ##.tnt-dmp-reactive.modal
 richmond.com##+js(acis, $, reg-wall)
 *##html:has(>head>meta[name="tncms-access-version"]) .subscriber-only:style(display:block!important)
+*##html:has(>head>meta[property="tncms:ads"]) .subscriber-only:style(display:block!important)
 abqjournal.com,mdjonline.com,santafenewmexican.com,northwestgeorgianews.com,idahopress.com,mainstreetnews.com,wvnews.com,albanyherald.com,djournal.com,thesunchronicle.com,lagrandeobserver.com,annistonstar.com,thebrunswicknews.com,anchoragepress.com,ellsworthamerican.com,bedfordgazette.com,henryherald.com,madison.com,omaha.com,richmond.com,apg-wi.com,stltoday.com,frontiersman.com,tribuneledgernews.com##+js(rpnt, script, /if \(window.location.hash\)/, '/*start*/unscramble=function(r){for(var a="",n=0,t=r.length;n<t;n++){var e=r.charCodeAt(n);e>=33&&e<=126?(sTmp=String.fromCharCode(33+(e-33+47)%94),a+=sTmp):a+=r.charAt(n)}return a};document.querySelectorAll(".subscriber-only.encrypted-content").forEach(function(e){e.innerHTML=unscramble(e.textContent),e.classList.remove("encrypted-content")});/*end*/ if(window.location.hash)', sedCount, 2)
 ||blox-ad-server.*.workers.dev^
 

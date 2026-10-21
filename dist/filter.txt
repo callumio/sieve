@@ -1,6 +1,6 @@
 ! Title: Sieve
 ! Expires: 1 days
-! Updated: Tue Oct 20 08:55:06 UTC 2026
+! Updated: Wed Oct 21 08:54:44 UTC 2026
 !
 ! --- src/github.txt ---
 github.com##button:has(svg[class*="octicon-agent"])
@@ -4930,3 +4930,9 @@ afr.com##+js(rpnt, script, /tp = window.tp/, 'setTimeout(function(){eval=window.
 ||gcprivacy.id^
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=www.reviewjournal.com
 @@||vms-videos.minutemediaservices.com^
+
+ejewishphilanthropy.com##+js(acis, jQuery)
+
+||flip-pay.com^$3p
+||clientside-collector-*.run.app/tag.js
+

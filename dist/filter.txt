@@ -1,6 +1,6 @@
 ! Title: Sieve
 ! Expires: 1 days
-! Updated: Thu Oct 22 08:57:15 UTC 2026
+! Updated: Fri Oct 23 08:52:14 UTC 2026
 !
 ! --- src/github.txt ---
 github.com##button:has(svg[class*="octicon-agent"])
@@ -4177,7 +4177,6 @@ policorner.ca##div.free-text,div.subscribe-box
 ||gyrovague.com^$xmlhttprequest,third-party
 ||top-fwz1.mail.ru^$script,third-party
 
-||jeuneafrique.com/cdn-cgi/trace$xmlhttprequest,~third-party
 ||assets.guim.co.uk/assets/StickyBottomBanner-island.client.web.*.js$script,domain=theguardian.com
 theguardian.com##[name="SlotBodyEnd"],div[data-cy="contributions-liveblog-epic"]
 timesofindia.indiatimes.com##+js(ra, style, body[style], stay)

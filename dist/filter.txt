@@ -1,6 +1,6 @@
 ! Title: Sieve
 ! Expires: 1 days
-! Updated: Mon Oct 26 09:24:21 UTC 2026
+! Updated: Tue Oct 27 09:22:43 UTC 2026
 !
 ! --- src/github.txt ---
 github.com##button:has(svg[class*="octicon-agent"])
@@ -3848,6 +3848,8 @@ kurier.at##+js(ra, class|style, div.paywall, stay)
 kurier.at##div#cfs-paywall-container
 lanacion.com.ar##+js(set-local-storage-item, metering, $remove$)
 lance.com.br##+js(rc, h-[550px], div.paywall-content[class*="h-\["], stay)
+latercera.com##+js(rc, article-body__teaser--locked, div.article-body__teaser--locked, stay)
+latercera.com##div#lt-paywall-slot
 ||latimes.com/meteringjs/$script,~third-party
 ||californiatimes.com/caltimes/latimes/Bootstrap.js$script,third-party,domain=latimes.com
 ||californiatimes.com/modalityjs/latest.js$script,third-party,domain=latimes.com

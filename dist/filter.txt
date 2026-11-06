@@ -1,6 +1,6 @@
 ! Title: Sieve
 ! Expires: 1 days
-! Updated: Thu Nov  5 11:39:42 UTC 2026
+! Updated: Fri Nov  6 11:38:17 UTC 2026
 !
 ! --- src/github.txt ---
 github.com##button:has(svg[class*="octicon-agent"])
@@ -3639,7 +3639,7 @@ mail.google.com,drive.google.com,docs.google.com##div[role="tooltip"]:has-text(T
 ||onecount.net^$third-party
 ||js.pelcro.com^$script,third-party
 /xbuilder/experience/execute$xmlhttprequest,domain=~automobilwoche.de|~frontline.thehindu.com|~thedispatch.com
-@@||piano.io^$domain=hbr.org|japantimes.co.jp
+@@||piano.io^$domain=japantimes.co.jp
 @@||tinypass.com^$script,domain=ajc.com|thelogic.co
 ||api.pico.tools/client/query/*$xmlhttprequest,~third-party
 ||api.pico.tools/popup/null/*$xmlhttprequest,~third-party
@@ -3803,8 +3803,6 @@ gauchazh.clicrbs.com.br##+js(ra, class, div.m-paid-content>div.hidden, stay)
 groene.nl##+js(cookie-remover, rlist)
 harpers.org##+js(cookie-remover, hr_session)
 ||harpers.org/wp-content/themes/timber/static/js/modal*.js
-||adobedtm.com/*/launch-*.js$script,domain=hbr.org
-||cdn.tinypass.com/api/tinypass.min.js$script,domain=hbr.org
 ||hilltimes.com/*/js/loadingoverlay/loadingoverlay.min.js$script,~third-party
 hindustantimes.com##+js(rc, paywall, .paywall, stay)
 hindustantimes.com##+js(rc, hide, .hide, stay)
@@ -4282,9 +4280,9 @@ internationalepolitik.de##+js(set-local-storage-item, paywall-nids, $remove$)
 ||invmed.co/bootstrap/bootstrap.min.js$script,domain=investing.com
 ipsoa.it##+js(ra, style, div.paywall, stay)
 ||jerseyeveningpost.com^$inline-script
-jewishinsider.com##+js(rc, paywalled-content, section.paywalled-content, stay)
-jewishinsider.com##+js(rc, whitePopup, body.whitePopup, stay)
+jewishinsider.com##section.body.p1:style(height: auto !important;)
 jewishinsider.com##div.regModalOuter
+jewishinsider.com##+js(ra, class, div.wp-block-custom-everlit-iframe-embed, stay)
 ||jornaldocomercio.com/*/json/paywall.json$xmlhttprequest,~third-party
 jornaljoca.com.br##+js(acis, $, paywall)
 kommersant.ru##+js(rc, doc--regwall, article.doc--regwall, stay)

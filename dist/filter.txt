@@ -1,6 +1,6 @@
 ! Title: Sieve
 ! Expires: 1 days
-! Updated: Fri Nov  6 11:38:17 UTC 2026
+! Updated: Sat Nov  7 10:43:39 UTC 2026
 !
 ! --- src/github.txt ---
 github.com##button:has(svg[class*="octicon-agent"])
@@ -3698,6 +3698,7 @@ bhaskar.com##+js(ra, class, div.paywallBlockedContent, stay)
 ||bizjournals.com/*.html?rel=plus$inline-script
 ||bwbx.io/s3/fence/fortress-client/*.css$stylesheet,third-party,domain=bloomberg.com
 ||meter.bostonglobe.com/js/meter.js$script,~third-party
+/\.businessdesk\.co\.nz\/.+\/(\w+-){3,}.+\?rel=plus/$inline-script,domain=businessdesk.co.nz
 /\.businessinsider\.com\/chunks\/scripts\/\d.+\.js/$script,domain=businessinsider.com,~third-party
 businessinsider.jp##+js(ra, hidden, div.piano-paywall-container[hidden], stay)
 ||businessoffashion.com/arc-platform-proxy.js$script,~third-party

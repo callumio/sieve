@@ -1,95 +1,10 @@
 ! Title: Sieve
 ! Expires: 1 days
-! Updated: Wed Nov 11 11:29:22 UTC 2026
+! Updated: Thu Nov 12 11:55:50 UTC 2026
 !
 ! --- src/github.txt ---
 github.com##button:has(svg[class*="octicon-agent"])
 ! --- https://codeberg.org/rossabaker/github-copilot-filters/raw/branch/main/filters.txt (license: CC0-1.0) ---
-# SPDX-FileCopyrightText: 2025 Ross A. Baker <ross@rossabaker.com>
-#
-# SPDX-License-Identifier: CC0-1.0
-
-
-# Exempt Copilot settings.  This is a conscious choice, and we
-# should let users opt out.
-@@||github.com/settings/copilot^$document,generichide,specifichide,elemhide
-@@||github.com/settings/copilot/*$document,generichide,specifichide,elemhide
-
-# General blunt force rules.  Use :not when the generic rules are
-# wrapping content that we do need to see.
-github.com##[href^="https://copilot-workspace.githubnext.com"]
-github.com##[href^="/copilot"]
-github.com##[class*="Copilot"]
-github.com##[class*="copilot"]:not([class="copilot-chat-enabled"])
-github.com##[id*="copilot"]:not([id="copilot-button-positioner"])
-github.com##[data-value="Chat with Copilot"]
-github.com##[data-hovercard-type="copilot"]
-
-# Hides the "Agents" button in the repo navigation panel
-github.com##nav[aria-label="Repository"] span[data-content="Agents"]:upward(2)
-
-# Hides the "Models" button in the repo navigation panel
-github.com##nav[aria-label="Repository"] span[data-content="Models"]:upward(2)
-
-# Hides Copilot as a suggested reviewer on PRs and issues.  The typo
-# in the id is intentional, and the ID is a magic number.
-github.com##[id="suggested-reviewier-175728472"]
-
-# Remove Copilot from Suggestions in reviewer dropdown
-github.com##label:has(input[value="175728472"])
-
-# Hide the "explain error" on the Actions details mennu
-github.com##li[aria-keyshortcuts="e"]:has(svg[class*="copilot"])
-
-# Button below text area on New Issue page
-github.com##button:has-text("Write with Copilot")
-
-# Appears just below a PR description as "Mention @copilot in a comment..."
-github.com##.js-discussion .Stack:has(svg.octicon-copilot)
-
-# Hide agent sessions on the dashboard
-github.com##div.dashboard h3:has-text("Agent sessions"):upward(3)
-
-# Buttons appear hovering over pull request or issue on the dashboard
-# A button and span are siblings, whose behavior varies by browser.
-# The :upward(1) hides the containing div that hides all actions.
-# This _could_ include desired actions, but only unwanted Copilot
-# actions have been observed in the wild.
-github.com##div.dashboard span:has-text("Assign to Copilot"):upward(1)
-github.com##div.dashboard span:has-text("Open in Copilot Chat"):upward(1)
-
-# Hide changelog entries that mention Copilot from the homepage
-# https://codeberg.org/rossabaker/github-copilot-filters/pulls/18
-github.com##.dashboard-changelog li:has(a[href*="copilot"])
-
-# Hide Copilot settings from the user navigation drawer
-# https://codeberg.org/rossabaker/github-copilot-filters/pulls/19
-github.com##div[aria-labelledby="global-user-nav-drawer-header"] li:has(> a[href="/settings/copilot"])
-
-# On issues and PR page, under assignees
-github.com##button:has(span:has-text("Assign to Copilot"))
-
-# Popup when opening a pull request: "Copilot can review pull requests"
-github.com##[data-analytics-visible*="copilot_code_review"]
-
-# On CodeQL issues, offers to fix it with Copilot above the code
-github.com##a:has-text("Copilot Autofix for CodeQL"):upward(3)
-
-# Blocks requests made on loading the new homepage
-# https://codeberg.org/rossabaker/github-copilot-filters/pulls/17
-||github.com/github-copilot/chat^
-
-# The "Fix with Copilot" button on broken Actions logs
-github.com##div[data-test-id="copilot-actions-fix-button"]
-
-# Remove the "Request Copilot review" button
-github.com##:has(> #suggested-reviewer-175728472)
-
-# Hide "Copilot started reviewing" timeline events
-github.com##.TimelineItem:has(a[aria-label^="View session"])
-
-# Remove the Agents tab in the repo navigation
-github.com##a[id="rgh-extensible-nav-agents"]:upward(li)
 ! --- https://raw.githubusercontent.com/laylavish/uBlockOrigin-HUGE-AI-Blocklist/main/list.txt (license: CC0-1.0) ---
 
 
@@ -4511,6 +4426,12 @@ bloomberg.com###fortress-container-root
 ||assets.bwbx.io^*/pianola/$script
 bloomberg.com###pathfinder-tout
 bloomberg.com##+js(trusted-replace-fetch-response, /\"eligible\":false/, "eligible":true, gatehouse)
+@@||assets.bwbx.io/s3/wall-e/
+bloomberg.com##+js(trusted-replace-fetch-response, /\"eligible\":false/, "eligible":true, gatehouse)
+bloomberg.com##+js(trusted-replace-fetch-response, /.*/, {"global":{"wallConfigEnabled":{"id":"wallConfigEnabled"\,"name":"Wall Config Enabled"\,"config":{"enableWallConfig":false}}}}, /wall-config\.json/)
+bloomberg.com##+js(trusted-replace-fetch-response, /.*/, {"access":"allow"\,"shouldShowWall":false\,"statsigTarget":{"type":"audience"\,"audienceId":"hello_world"}}, /paywall-decision/)
+bloomberg.com##+js(no-fetch-if, method:POST /prodregistryv2/)
+||assets.bwbx.io/s3/sparkle/
 
 ||smartwall.theglobeandmail.com^
 ||theglobeandmail.com/*/zephr-browser/
@@ -4726,10 +4647,11 @@ bizjournals.com##html, body:style(overflow: inherit!important)
 bizjournals.com##div[data-dev^="CxWidget_site"][data-dev*="marketing"]
 bizjournals.com###MarketSubOffer, #cxense_bottom_bar
 bizjournals.com##.paywall-content>.print\:hidden
-bizjournals.com##+js(rpnt, script, '/"(standard|peakNews|breakingNews)"/', '"nativeAd"', sedCount, 1)
+bizjournals.com##+js(rpnt, script, '/"(standard|peakNews|breakingNews|taEvergreen)"/', '"nativeAd"', sedCount, 1)
 bizjournals.com##[data-dev="MovableAd"]
 bizjournals.com##a[id^="cXLink"]:upward(#headlessui-portal-root)
 bizjournals.com##[data-dev="PromoListings"]
+bizjournals.com##+js(set, tp.pianoId, {})
 
 australvaldivia.cl##+js(set, app.isPortada, true)
 australvaldivia.cl##+js(remove-attr, oncontextmenu)
@@ -4836,6 +4758,7 @@ tampabay.com##.html-advertisement,.vert
 
 al.com,cleveland.com,lehighvalleylive.com,masslive.com,mlive.com,nj.com,oregonlive.com,pennlive.com,silive.com,syracuse.com##+js(set, adiData.entryTags, '')
 al.com,cleveland.com,lehighvalleylive.com,masslive.com,mlive.com,nj.com,oregonlive.com,pennlive.com,silive.com,syracuse.com##+js(set, adiData.entryTagsArray, undefined)
+al.com,cleveland.com,lehighvalleylive.com,masslive.com,mlive.com,nj.com,oregonlive.com,pennlive.com,silive.com,syracuse.com##+js(set, Fusion.contentCache.pennant-api.undefined.data, {})
 
 foxnews.com##.gated-article-body.has-gated-overlay:style(height:auto!important;overflow:show!important)
 foxnews.com##.show-gate.gated-overlay.article-gating

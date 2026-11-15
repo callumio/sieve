@@ -1,6 +1,6 @@
 ! Title: Sieve
 ! Expires: 1 days
-! Updated: Sat Nov 14 10:59:57 UTC 2026
+! Updated: Sun Nov 15 11:34:27 UTC 2026
 !
 ! --- src/github.txt ---
 github.com##button:has(svg[class*="octicon-agent"])
@@ -4011,6 +4011,7 @@ unherd.com##+js(ra, id, div#premiumcontent, stay)
 unherd.com##div#premiumpreview
 /\.vn\.at\/.+\/\d{4}\//$inline-script,domain=vn.at
 ||washingtonpost.com/*/tetro-client/$script,~third-party
+||welt.de/pss-chords-*.js$script,~third-party
 ||weser-kurier.de/assets/*/wk-bundle.min.js$script,~third-party
 ||account.winnipegfreepress.com/api/v*/auth/identify$xmlhttprequest,~third-party
 winnipegfreepress.com##.billboard-ad-space,.ad,.article-ad,.fixed-sky

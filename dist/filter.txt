@@ -1,6 +1,6 @@
 ! Title: Sieve
 ! Expires: 1 days
-! Updated: Wed Nov 18 12:21:27 UTC 2026
+! Updated: Thu Nov 19 12:15:42 UTC 2026
 !
 ! --- src/github.txt ---
 github.com##button:has(svg[class*="octicon-agent"])
@@ -3800,7 +3800,6 @@ gauchazh.clicrbs.com.br##+js(ra, class, div.m-paid-content>div.hidden, stay)
 groene.nl##+js(cookie-remover, rlist)
 harpers.org##+js(cookie-remover, hr_session)
 ||harpers.org/wp-content/themes/timber/static/js/modal*.js
-||hilltimes.com/*/js/loadingoverlay/loadingoverlay.min.js$script,~third-party
 hindustantimes.com##+js(rc, paywall, .paywall, stay)
 hindustantimes.com##+js(rc, hide, .hide, stay)
 hindustantimes.com##div.paywall-container,div[class^="sub-paywall-version"],section[amp-access="NOT userSubscribed"]

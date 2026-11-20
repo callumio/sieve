@@ -1,6 +1,6 @@
 ! Title: Sieve
 ! Expires: 1 days
-! Updated: Thu Nov 19 12:15:42 UTC 2026
+! Updated: Fri Nov 20 12:15:35 UTC 2026
 !
 ! --- src/github.txt ---
 github.com##button:has(svg[class*="octicon-agent"])
@@ -4105,10 +4105,10 @@ corriereadriatico.it,ilgazzettino.it,ilmattino.it,ilmessaggero.it,quotidianodipu
 ||*dive.com/static/js/dist/contentGate.bundle.js$script,~third-party
 .com/static/js/dist/contentGate.bundle.js$script,~third-party,domain=cfo.com|pharmavoice.com|proformative.com|socialmediatoday.com
 
-profi.de,topagrar.com,wochenblatt.com##+js(ra, class|style, div.paywall-full-content[style], stay)
-profi.de,wochenblatt.com##div.m-paywall__textFadeOut,div[id^="paymentprocess-"]
-||topagrar.com/*/news/$inline-script
-topagrar.com##div.paywall-package
+profi.de##+js(ra, class, div.container-lg > div.hidden, stay)
+profi.de##div.paragraph-paywall,div.container-lg > div.paragraph-text,div#self-promotion
+topagrar.com##+js(ra, class|style, div.paywall-full-content[style], stay)
+topagrar.com##div.m-paywall__textFadeOut
 
 cz.de,dewezet.de,dieharke.de,dnn.de,gnz.de,goettinger-tageblatt.de,haz.de,kn-online.de,landeszeitung.de,ln-online.de,lvz.de,maz-online.de,ndz.de,neuepresse.de,op-marburg.de,ostsee-zeitung.de,paz-online.de,remszeitung.de,rga.de,rnd.de,saechsische.de,siegener-zeitung.de,szlz.de,sn-online.de,solinger-tageblatt.de,tah.de,torgauerzeitung.de,waz-online.de##+js(set, window.Fusion.globalContent.isPaid, false)
 

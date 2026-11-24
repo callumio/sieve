@@ -1,6 +1,6 @@
 ! Title: Sieve
 ! Expires: 1 days
-! Updated: Mon Nov 23 13:44:35 UTC 2026
+! Updated: Tue Nov 24 14:20:06 UTC 2026
 !
 ! --- src/github.txt ---
 github.com##button:has(svg[class*="octicon-agent"])
@@ -3739,8 +3739,8 @@ cronista.com##div.paywall-chain--show
 csmonitor.com##+js(set-local-storage-item, /^/, $remove$)
 csmonitor.com##.paywall
 denik.cz##+js(ra, class, div.paywall, stay)
-diepresse.com##+js(ra, class, div.premium-content.hide, stay)
-diepresse.com##div.paywall-container--locked
+diepresse.com##+js(ra, class|hidden, div.premium-content, stay)
+diepresse.com##div.paywall-container
 discovermagazine.com##body:style(overflow: auto !important;)
 discovermagazine.com##div.fIkXwQ,div[style*="fadeIn"],div[role="button"][aria-label="Dismiss Dialog"]
 ||dn.se/check-paywall-v2.js,~third-party
@@ -4117,8 +4117,6 @@ cz.de,dewezet.de,dieharke.de,dnn.de,gnz.de,goettinger-tageblatt.de,haz.de,kn-onl
 ||mcclatchy.com/mcc-paywall.js$script,third-party
 
 .com/wp-content/plugins/loader-wp/static/loader.min.js$script,~third-party
-bostonherald.com,denverpost.com,eastbaytimes.com,mercurynews.com,ocregister.com,pressenterprise.com,sandiegouniontribune.com,twincities.com##+js(ra, subscriptions-section, [subscriptions-section="content"], stay)
-bostonherald.com,denverpost.com,eastbaytimes.com,mercurynews.com,ocregister.com,pressenterprise.com,sandiegouniontribune.com,twincities.com##[subscriptions-section="content-not-granted"]
 
 .de/thenewsbar/config/$xmlhttprequest,~third-party,domain=aerokurier.de|auto-motor-und-sport.de|flugrevue.de|motorradonline.de|womenshealth.de
 

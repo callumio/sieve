@@ -1,6 +1,6 @@
 ! Title: Sieve
 ! Expires: 1 days
-! Updated: Wed Nov 25 13:39:20 UTC 2026
+! Updated: Thu Nov 26 13:15:36 UTC 2026
 !
 ! --- src/github.txt ---
 github.com##button:has(svg[class*="octicon-agent"])
@@ -4331,6 +4331,7 @@ opopular.com.br##div.PJLV-ihxtsVt-css
 ||perspectivemedia.com/wp-admin/admin-ajax.php$xmlhttprequest,~third-party
 perspectivemedia.com##div.hustle-ui
 popbitch.com##+js(ra, class, div[class*="-premium"], stay)
+||flip-pay.com^$script,third-party,domain=postandcourier.com
 ||flip-pay.com^$script,third-party,domain=pressgazette.co.uk
 psychologie-heute.de##+js(ra, class, div.paywalledContent, stay)
 psychologie-heute.de##+js(ra, class, div.payWall, stay)

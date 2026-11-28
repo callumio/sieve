@@ -1,6 +1,6 @@
 ! Title: Sieve
 ! Expires: 1 days
-! Updated: Fri Nov 27 13:13:07 UTC 2026
+! Updated: Sat Nov 28 12:28:50 UTC 2026
 !
 ! --- src/github.txt ---
 github.com##button:has(svg[class*="octicon-agent"])
@@ -4008,6 +4008,7 @@ thewrap.com##+js(cookie-remover, blaize_session)
 timeshighereducation.com##+js(rc, paywall-fade, div.paywall-fade, stay)
 timeshighereducation.com##div.paywall-active
 ||timesofindia.indiatimes.com/*.cms?rel=plus$inline-script
+||towardsdatascience.com/assets/entry.client-*.js$script,~third-party
 unherd.com##+js(ra, id, div#premiumcontent, stay)
 unherd.com##div#premiumpreview
 /\.vn\.at\/.+\/\d{4}\//$inline-script,domain=vn.at
@@ -4217,6 +4218,7 @@ brainly.com,brainly.com.br##+js(set-local-storage-item, /^/, $remove$)
 brusselstimes.com##+js(ra, style, div[style*="height: 0;"], stay)
 businessden.com,richmondbizsense.com##+js(ra, class, div.cp-paywall-user, stay)
 businessden.com,richmondbizsense.com##div#copperpress-paywall
+||businessinsider.de^$inline-script
 businesstoday.in##+js(cookie-remover, magazineSession)
 businesstoday.in##div#magazinePayWallStrip
 ||nitrocdn.com/*/paywall.$script,domain=capitalaberto.com.br
